@@ -23,6 +23,7 @@ class MicropostsController < ApplicationController
 
     def micropost_params
       params.require(:micropost).permit(:content)
+      #params.require(:micropost).permit() #ここでparamsを制限する
     end
 
     def correct_user
